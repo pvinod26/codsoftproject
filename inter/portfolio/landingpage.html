@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samsung S25 Ultra - Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background-color: #111;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.75rem;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      color: #fff;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: #3b82f6;
+    }
+    section {
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .hero {
+      background: linear-gradient(to bottom, #000, #1f2937);
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #d1d5db;
+      margin-bottom: 2rem;
+    }
+    .button-primary {
+      background-color: #2563eb;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 9999px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button-primary:hover {
+      background-color: #1d4ed8;
+    }
+    .features {
+      background-color: #1f2937;
+    }
+    .feature-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .feature-box {
+      background-color: #374151;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+      margin: 1rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      flex-basis: 30%;
+      text-align: center;
+    }
+    .feature-box h4 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .feature-box p {
+      font-size: 1.1rem;
+      color: #d1d5db;
+    }
+    .feature-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
+    }
+    .gallery {
+      background-color: #000;
+      padding: 2rem 0;
+      overflow-x: auto;
+      white-space: nowrap;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .gallery-container {
+      display: flex;
+      gap: 1rem;
+    }
+    .gallery img {
+      max-width: 250px;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .gallery::-webkit-scrollbar {
+      height: 8px;
+    }
+    .gallery::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 4px;
+    }
+    .gallery::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+    .specs {
+      background-color: #111827;
+    }
+    .specs ul {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+      list-style: none;
+      padding: 0;
+    }
+    .specs li {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    .buy {
+      background: linear-gradient(to top, #000, #1f2937);
+    }
+    .buy .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    @media(min-width: 768px) {
+      .buy .buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+    .button-secondary {
+      background-color: #fff;
+      color: #000;
+      padding: 1rem 2rem;
+      border-radius: 9999px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .button-secondary:hover {
+      background-color: #d1d5db;
+    }
+    footer {
+      background-color: #1f2937;
+      padding: 2rem;
+      text-align: center;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Samsung S25 Ultra</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#specs">Specs</a>
+      <a href="#buy">Buy Now</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Introducing the All-New Samsung S25 Ultra</h2>
+    <p>Experience the future with cutting-edge technology, sleek design, and ultimate performance.</p>
+    <a class="button-primary" href="https://www.samsung.com/in/smartphones/" target="_blank">Learn More</a>
+  </section>
+
+  <section id="features" class="features">
+    <h3 class="text-4xl font-semibold mb-10">Top Features</h3>
+    <div class="feature-grid">
+      <div class="feature-box">
+        <h4>200MP AI Camera</h4>
+        <p>Capture life in ultra detail with cutting-edge AI enhancements.</p>
+      </div>
+      <div class="feature-box">
+        <h4>Snapdragon Gen 4</h4>
+        <p>Unmatched speed and efficiency for all your tasks and gaming needs.</p>
+      </div>
+      <div class="feature-box">
+        <h4>5500mAh Battery</h4>
+        <p>Stay powered all day with lightning-fast charging support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h3 class="text-4xl font-semibold">Gallery</h3>
+    <div class="gallery-container">
+      <!-- Images -->
+      <img src="https://www.livemint.com/lm-img/img/2025/01/22/600x338/s25_ultra_1737571088741_1737571094005.jpeg" alt="Samsung S25 - Image 1">
+      <img src="https://images.samsung.com/in/smartphones/galaxy-s25-ultra/images/galaxy-s25-ultra-features-one-ui-visual-mo.jpg?imbypass=true" alt="Samsung S25 - Image 2">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhQWXcW0cBUnHT-XMQqHNAxob4N7aVybqjvQ&s" alt="Samsung S25 - Image 3">
+      <img src="https://images.samsung.com/au/smartphones/galaxy-s25-ultra/images/galaxy-s25-ultra-features-kv.jpg?imbypass=true" alt="Samsung S25 - Image 4">
+      <img src="https://preview.redd.it/galaxy-s25-ultra-new-render-v0-tyrqo4to14pd1.jpeg?width=1080&crop=smart&auto=webp&s=43f4b0de3729704b5b7ca3222400965527d1006a" alt="Samsung S25 - Image 5">
+      <img src="https://jamesandco.in/wp-content/uploads/2025/03/71fBa2lSAVL._SL1500_-2.jpg" alt="Samsung S25 - Image 6">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN6NBPiF97tNr6egsgPJuGWQN0UU7R0hQR1A&s" alt="Samsung S25 - Image 7">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1KQ2bNU86Q0o26xU7wthfuuejrp5k8VDN9A&s" alt="Samsung S25 - Image 8">
+      <img src="https://i.gadgets360cdn.com/large/orange_s24_galaxy_1736430033286.jpg" alt="Samsung S25 - Image 9">
+    </div>
+  </section>
+
+  <section id="specs" class="specs">
+    <h3 class="text-4xl font-semibold mb-8">Specifications</h3>
+    <ul>
+      <li><strong>Display:</strong> 6.9" Dynamic AMOLED 2X, 144Hz</li>
+      <li><strong>Processor:</strong> Snapdragon 8 Gen 4</li>
+      <li><strong>Camera:</strong> 200MP (Rear), 50MP (Front)</li>
+      <li><strong>Battery:</strong> 5500mAh with 65W fast charging</li>
+      <li><strong>Storage:</strong> Up to 1TB</li>
+      <li><strong>OS:</strong> Android 15 with One UI 7</li>
+    </ul>
+  </section>
+
+  <section id="buy" class="buy">
+    <h3 class="text-4xl font-bold mb-6">Ready to Upgrade?</h3>
+    <p class="text-lg text-gray-300 mb-8">Pre-order now and be the first to experience the next-gen smartphone.</p>
+    <div class="buttons">
+      <a class="button-primary" href="https://www.samsung.com/in/smartphones/" target="_blank">Learn More</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Samsung. All rights reserved.
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+

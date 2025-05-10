@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfolio of a creative front-end developer passionate about responsive web design." />
+  <title>Vinod's Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #007cf0, #00dfd8);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+    }
+
+    .hero-text span {
+      color: #fffa65;
+    }
+
+    .hero-img img {
+      border-radius: 50%;
+      max-width: 250px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff6f61;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      margin-top: 15px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e85c50;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .skills-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding-top: 10px;
+    }
+
+    .skills-list li {
+      background: #e0e0e0;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: 500;
+    }
+
+    .project-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #007cf0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #007cf0;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Vinod</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Hello, I'm <span>Vinod</span></h2>
+        <p>Creative Web Developer & Designer</p>
+        <a href="#contact" class="btn">Hire Me</a>
+      </div>
+      <div class="hero-img">
+        <img src="https://w0.peakpx.com/wallpaper/865/15/HD-wallpaper-brahmi-actor-brahmanandam-comedy-telugu-tollywood.jpg" alt="Professional photo of Vinod">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m a front-end web developer with a passion for building clean and responsive websites. I’ve completed a full web development course and love bringing ideas to life with code. I’ve also recently developed an interest in graphic design and am excited to start learning more about it.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Complete front-end web development</li>
+        <li>Responsive Design</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-cards">
+        <div class="card">
+          <h3>Portfolio Website</h3>
+          <p>A personal portfolio to showcase my skills and work.</p>
+          <a href="portfolio/index.html" target="_blank">View Project</a> <!-- Correct path for portfolio -->
+        </div>
+        <div class="card">
+          <h3>Landing Page</h3>
+          <p>A clean product landing page using only HTML and CSS.</p>
+          <a href="landingpage.html" target="_blank">View Project</a> <!-- Correct path for landing page -->
+        </div>
+        <div class="card">
+          <h3>Calculator</h3>
+          <p>A well-designed calculator using HTML, CSS, and JavaScript.</p>
+          <a href="calc.html" target="_blank">View Project</a> <!-- Correct path for calculator -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="patnaikunivinod@gmail.com">patnaikunivinod@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vinod. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
